@@ -111,29 +111,32 @@
             .outer-grid-container {
                 display: grid;
                 align-items: center;
+                grid-auto-flow: row;
                 grid-template-columns: 1fr;
             }
 
             .inner-grid-container {
                 display: grid;
                 align-items: center;
-                grid-template-columns: 1fr 1fr;
+                grid-auto-flow: row;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
             }
 
             .grid-item {
                 font-size: 15px;
                 text-align: left;
-                width: 50vw;
-                height: 50vw;
+                width: 100vw;
+                height: 200vw;
             }
 
             .grid-item-inner {
-                background-color: brown;
+                background-color: orange;
                 font-size: 15px;
                 text-align: left;
-                width: 50vw;
-                height: 50vw;
-            }
+                width: 100vw;
+                height: 100vw;
+            }   
         }
 
         /* Large devices (laptops/desktops, 992px and up) */
