@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        .outer-grid-container {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .inner-grid-container {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .grid-item {
+            background-color: #ffffff;
+            font-size: 15px;
+            text-align: left;
+            width: 25vw;
+            height: 25vw;
+        }
+
+        .grid-item-inner {            
+            font-size: 15px;
+            text-align: left;
+            width: 25vw;
+            height: 25vw;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        body {
+            margin: 0px;
+            overflow-x: hidden;
+            background-color: #808080;
+        }
+
+
+        /* Extra small devices (phones, 600px and down) */
+        @media (min-width: 20px) {
+            .outer-grid-container {
+                display: grid;
+                align-items: center;
+                grid-auto-flow: row;
+                grid-template-columns: 1fr;
+            }
+
+            .inner-grid-container {
+                display: grid;
+                align-items: center;
+                grid-auto-flow: row;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
+            }
+
+            .grid-item {
+                font-size: 15px;
+                text-align: left;
+                width: 100vw;
+                height: 200vw;
+            }
+
+            .grid-item-inner {
+                background-color: cornsilk;
+                font-size: 15px;
+                text-align: left;
+                width: 100vw;
+                height: 100vw;
+            }           
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media  (min-width: 600px) {
+            .outer-grid-container {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr;
+            }
+
+            .inner-grid-container {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .grid-item {
+                font-size: 15px;
+                text-align: left;
+                width: 50vw;
+                height: 50vw;
+            }
+
+            .grid-item-inner {
+                background-color: crimson;
+                font-size: 15px;
+                text-align: left;
+                width: 50vw;
+                height: 50vw;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .outer-grid-container {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr;
+            }
+
+            .inner-grid-container {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .grid-item {
+                font-size: 15px;
+                text-align: left;
+                width: 50vw;
+                height: 50vw;
+            }
+
+            .grid-item-inner {
+                background-color: brown;
+                font-size: 15px;
+                text-align: left;
+                width: 50vw;
+                height: 50vw;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .outer-grid-container {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .inner-grid-container {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr;
+            }
+
+            .grid-item {
+                font-size: 15px;
+                text-align: left;
+                width: 33vw;
+                height: 66vw;
+            }
+
+            .grid-item-inner {
+                background-color: aqua;
+                font-size: 15px;
+                text-align: left;
+                width: 33vw;
+                height: 33vw;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .outer-grid-container {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .inner-grid-container {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .grid-item {                
+                font-size: 15px;
+                text-align: left;
+                width: 25vw;
+                height: 25vw;
+            }
+
+            .grid-item-inner {
+                background-color: forestgreen;
+                font-size: 15px;
+                text-align: left;
+                width: 25vw;
+                height: 25vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Team</h1>
+
+    <div class="outer-grid-container">
+        <div class="grid-item">
+            <div class="inner-grid-container">
+                <div class="grid-item-inner">
+                    <img src="pic3.jpg" />
+                </div>
+                <div class="grid-item-inner" style="background-color: #027cbb; color: #fff;">
+                    <div style="padding: 10px">
+                        <p>
+                            <b>Bio 1</b>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum malesuada dolor sed mattis. Integer ipsum dui, porta nec nibh ut, vehicula efficitur nulla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="inner-grid-container">
+                <div class="grid-item-inner">
+                    <img src="pic4.jpg" />
+                </div>
+                <div class="grid-item-inner">
+                    <div style="padding: 10px">
+                        <p>
+                            <b>Bio 2</b>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum malesuada dolor sed mattis. Integer ipsum dui, porta nec nibh ut, vehicula efficitur nulla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="inner-grid-container">
+                <div class="grid-item-inner">
+                    <img src="pic5.jpg" />
+                </div>
+                <div class="grid-item-inner">
+                    <div style="padding: 10px">
+                        <p>
+                            <b>Bio 3</b>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum malesuada dolor sed mattis. Integer ipsum dui, porta nec nibh ut, vehicula efficitur nulla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="inner-grid-container">
+                <div class="grid-item-inner">
+                    <img src="pic6.jpg" />
+                </div>
+                <div class="grid-item-inner">
+                    <div style="padding: 10px">
+                        <p>
+                            <b>Bio 4</b>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum malesuada dolor sed mattis. Integer ipsum dui, porta nec nibh ut, vehicula efficitur nulla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
